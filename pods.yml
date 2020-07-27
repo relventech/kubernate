@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
     - name: kubernates
-      image: relventech/kubernates:tagVersion
+      image: relventech/kubernates
       ports:
         - containerPort: 8080
