@@ -7,7 +7,7 @@ pipeline{
      stages{
          stage('Build docker image'){
              steps{
-                  sh 'docker build -t relventech/kubernates:${DOCKER_TAG} '
+                  sh 'docker build . -t relventech/kubernates:${DOCKER_TAG} '
              }
          }
          stage('Push Docker Image'){
