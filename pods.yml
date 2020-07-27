@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kubernates
+  labels:
+    app: kubernates
+spec:
+  containers:
+    - name: kubernates
+      image: relventech/kubernates:tagVersion
+      ports:
+        - containerPort: 8080
